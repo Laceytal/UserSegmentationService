@@ -57,11 +57,11 @@ go run cmd/main.go
 ### Создать сегмент
 
 ```bash
-curl -X POST http://localhost:8080/segments \
+curl -X POST http://localhost:8080/api/segments \
   -H "Content-Type: application/json" \
   -d '{"name":"MAIL_GPT"}'
 ```
 ### Получить сегменты пользователя
 ```bash
-curl http://localhost:8080/users/1/segments
+curl http://localhost:8080/api/segments
 ```
